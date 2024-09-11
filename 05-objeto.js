@@ -20,6 +20,7 @@ pessoa1.falar(); // Chamada do método falar() da classe Pessoa
 // Outro objeto/instancia "!pessoal2" criada a partir da mesma classe Pessoa
 
 const pessoa2 = new Pessoa('Ana Luiza', 23, 1.72, 62);
+
 pessoa2.falar(); // Chamada do método falar() da classe Pessoa
 
 const pessoa3 = new Pessoa('Matheo', 13, 1.50, 82);
