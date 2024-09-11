@@ -50,3 +50,4 @@ const professor = new Professor ("Wanderson", 40, 1.65, 70, 1000);
  console. log(aluno); // Saída: Estudante {nome: 'João', idade: 16, altura: 1.7, peso: 70, curso: 'Programação de Jogos Digitais')
  console. log(diretor); // Saída: Diretor (nome: 'Sérgio', idade: 45, altura: 1.65, peso: 65, salario: 3000 }
  console. log(professor);// Saida: Professor {nome: 'Wanderson', idade: 40, altura: 1,65, po70, salario: 1000 ›
+ 
