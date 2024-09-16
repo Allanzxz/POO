@@ -45,10 +45,10 @@ class Vilarejo extends Cidade {
 }
 
 // Criando instâncias de Distrito e Vilarejo
-const distrito = new Distrito("Mimoso", 637);
+const distrito = new Distrito("Mimoso", 637, 100, 1967, 3, "centro-oeste", "julio");
 distrito.falar(); // Saída: Essa é o distrito de Mimoso!
 distrito.mostrarInfo(); // Saída: A população do distrito é de 637 habitantes!
 
-const vilarejo = new Vilarejo("Bom Alegre", 159);
+const vilarejo = new Vilarejo("Bom Alegre", 159, 10, 1992, 2, "centro-oeste", "Allan");
 vilarejo.falar(); // Saída: Essa é o vilarejo de Bom Alegre!
 vilarejo.mostrarInfo(); // Saída: A população do vilarejo é de 159 habitantes!
