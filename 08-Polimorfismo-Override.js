@@ -27,4 +27,28 @@ class Guerreiro extends Personagem {
     }
 }
 
+// Classe Mago que herda de Personagem
 
+class Mago extends Personagem {
+    constructor(nome, vida, magia) {
+        super(nome, vida);
+        this.feiticio = feiticio;
+    }
+
+    atacar() {
+        super.atacar();
+        console.log(`${this.nome} lança ${this.feitico}`);
+    }
+}
+
+// Classe Arqueiro que herda de Personagem
+    class Arqueiro extends Personagem {
+    constructor (nome, vida, tipoflecha) {
+        super(nome, vida);
+        this.tipoFlecha = tipoFlecha;
+    }
+}
+ atacar() {
+        super.atacar();
+        console.log(`${this.nome} dispara flechas ${this.tipoFlecha}!`);
+    }
