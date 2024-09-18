@@ -45,7 +45,7 @@ class Vilarejo extends Cidade {
 }
 
 // Criando instâncias de Distrito e Vilarejo
-const distrito = new Distrito("Mimoso", 637, 100, 1967, 3, "centro-oeste", "julio");
+const distrito = new Distrito("Mimoso", 637, 100, 1967, 3, "centro-oeste", "Julio");
 distrito.falar(); // Saída: Essa é o distrito de Mimoso!
 distrito.mostrarInfo(); // Saída: A população do distrito é de 637 habitantes!
 
