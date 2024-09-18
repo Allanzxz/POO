@@ -14,7 +14,7 @@ class personagem {
     public void atacr(String arma) {
         System.out.println(nome + " ataca com o" + arma + "!");
     }
-    public void atacr(String tipoFlecha, boolean comArco) {
+    public void atacar(String tipoFlecha, boolean comArco) {
         if (comArco) {
             System.out.println(nome + " dispara flechas " + tipoFlecha + " com um arco!");
         } else {
