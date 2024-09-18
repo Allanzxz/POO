@@ -2,7 +2,7 @@ class personagem {
     // Atributos
     private String nome;
     private int vida;
-    // Método COnstrutor de classe Personagem
+    // Método Construtor de classe Personagem
     public personagem(String nome, int vida) {
         this.nome = nome;
         this.vida = vida;
