@@ -1,17 +1,7 @@
 
 class Nike {
   constructor(
-    nome,
-    dominio,
-    poderPrincipal,
-    simbolo,
-    velocidade,
-    energia,
-    vitalidade,
-    sabedoria,
-    habilidadeLuta,
-    divindadePai
-  ) {
+    nome, dominio, poderPrincipal, simbolo, velocidade, energia, vitalidade, sabedoria, habilidadeLuta, divindadePai) {
     this.nome = nome;
     this.dominio = dominio; 
     this.poderPrincipal = poderPrincipal; 
