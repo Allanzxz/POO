@@ -5,7 +5,7 @@ class Personagem {
   #vida;
   #mana;
 
-  constructor(nome, classes, vida, mana) {
+  constructor(nome, classes, nivel, vida, mana) {
     this.#nome = nome;
     this.#classes = classes;
     this.#nivel = nivel;
@@ -72,7 +72,7 @@ class Personagem {
 }
 
 class Assassino extends Personagem {
-    constructor(nome, nivel, mana, furtividade) {
+    constructor(nome, nivel,vida, mana, furtividade) {
         super(nome, "Assassino", nivel, vida, mana);
         this.furtividade = furtividade; //Atributo especifico
     }
@@ -86,7 +86,7 @@ class Assassino extends Personagem {
     }
 }
  class Paladino extends Personagem {
-    constructor(nome, nivel, mana, fe) {
+    constructor(nome, nivel, vida, mana, fe) {
         super(nome, "Paladino", nivel, vida, mana);
         this.fe = fe; //Atributo especifico
     }
@@ -107,9 +107,9 @@ class Assassino extends Personagem {
         super(nome, "Mecanico", nivel, vida, mana);
         this.engenharia = engenharia; //Atributo especifico
     }
-    receberDano() {
+    receberDano(dano) {
         const danoReduzido = dano - this.engenharia;
-        super.recebeuDano(danoReduzido);
+        super.receberDano(danoReduzido);
         console.log(`${this.nome} usou sua engenharia para reduzir o dano em ${this.engenharia}.`);
     }
     construirTorre() {
