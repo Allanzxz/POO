@@ -101,3 +101,18 @@ class Assassino extends Personagem {
         console.log(`${this.mome} usa sua fé para curar a si mesmo ou aliados`);
     }
  }
+
+ class Mecanico extends Personagem {
+    constructor(nome, nivel, vida, mana, engenharia) {
+        super(nome, "Mecanico", nivel, vida, mana);
+        this.engenharia = engenharia; //Atributo especifico
+    }
+    receberDano() {
+        const danoReduzido = dano - this.engenharia;
+        super.recebeuDano(danoReduzido);
+        console.log(`${this.nome} usou sua engenharia para reduzir o dano em ${this.engenharia}.`);
+    }
+    construirTorre() {
+        console.log(`${this.nome} construiu uma torre defensiva!`);
+    }
+ }
