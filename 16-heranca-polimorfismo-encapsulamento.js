@@ -70,3 +70,18 @@ class Personagem {
         console.log(`${this.#nome} recebeu ${dano} de dano. Vida restante: ${this.#vida}`);
     }
 }
+
+class Assassino extends Personagem {
+    constructor(nome, nivel, mana, furtividade) {
+        super(nome, "Assassino", nivel, vida, mana);
+        this.furtividade = furtividade; //Atributo especifico
+    }
+    atacar() {
+        console.log(`${this.nome} ataca silenciosamente com dano adicional pela furtividade!`);
+    }
+    
+    usarFurtividade() {
+        console.log(`${this.nome} usa sua furtividade de nivel ${this.furtividade} para se esconder`);
+    
+    }
+}
