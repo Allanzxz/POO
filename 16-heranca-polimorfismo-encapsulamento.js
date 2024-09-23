@@ -116,3 +116,21 @@ class Assassino extends Personagem {
         console.log(`${this.nome} construiu uma torre defensiva!`);
     }
  }
+
+ //Criando instancia da classe derivada Assassino
+ const assassino = new Assassino("Luna Sombria", 10, 100, 50, 8);
+ //Chamando os métodos
+ assassino.atacar();
+ assassino.usarFurtividade();
+
+ //Criando instancia da classe derivada Paladino
+ const paladino = new Paladino("Sir Lancelot", 12, 120, 70, 15);
+ //Chamando os métodos
+ paladino.defesa();
+ paladino.curar();
+
+ //Criando instancia da classe derivada Mecanico
+ const mecanico = new Mecanico("Roberto das Engrenagens", 8, 90, 40, 5);
+ //Chamando os métodos
+ mecanico.receberDano(30);
+ mecanico.construirTorre();
