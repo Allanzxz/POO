@@ -27,4 +27,22 @@ class Personagem {
   set classes (classes) {
     this.#classes = classes;
   }
+  get nivel() {
+    return this.#nivel;
+  }
+  set nivel(nivel) {
+    this.#nivel = nivel;
+  }
+  get vida() {
+    return this.#vida;
+  }
+  set vida(vida) {
+    this.#vida = vida;
+  }
+  get mana() {
+    return this.#mana;
+  }
+  set mana(mana) {
+    this.#mana = mana;
+  }
 }
