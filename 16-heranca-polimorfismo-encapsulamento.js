@@ -134,3 +134,22 @@ class Assassino extends Personagem {
  //Chamando os métodos
  mecanico.receberDano(30);
  mecanico.construirTorre();
+
+ console.log("------------------------------------------------------------------");
+ console.log("Modificando os objetos usando setters:");
+ console.log("------------------------------------------------------------------");
+
+ // Modificando o objeto assassino usando setters
+ assassino.nome = "Raven";
+ console.log(` Nome modifcado: ${assassino.nome}`);
+ assassino.atacar();
+
+ // Modificando o objeto paladino usando setters
+ paladino.vida = 150;
+ console.log(` Vida modficada: ${paladino.vida}`);
+ paladino.defesa();
+
+ // Modificando o objeto mecanico usando setters
+ mecanico.mana = 60;
+ console.log(`Mana modficada: ${mecanico.mana}`);
+ mecanico.receberDano(50);
