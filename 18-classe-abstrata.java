@@ -34,3 +34,26 @@ class Guerreiro extends Personagem {
         System.out.println(nome + " levanta o escudo para se defender! " );
     }
 }
+
+// Classe derivada "Mago"
+class Mago extends Personagem {
+    private String magia;
+
+    // Construtor da classe Guerreiro
+    public Guerreiro(String nome, String magia) {
+        super(nome);
+        this.arma = magia;
+    }
+
+    // Subrescrita do método atacr da classe Abstrata Personagem
+    @Override
+    public void atacar() {
+        System.out.println(nome + " lança a magia " + magia);
+    }
+    
+    // Subrescrita do método defender da classe Abstrata Personagem
+    @Override
+    public void defender() {
+        System.out.println(nome + " usa um escudo para se defender! " );
+    }
+}
