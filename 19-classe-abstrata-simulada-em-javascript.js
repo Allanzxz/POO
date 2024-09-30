@@ -32,3 +32,19 @@ class Guerreiro extends Personagem {
         console.log(`${this.nome} defende com o escudo`);
     }
 }
+
+//Classe derivada "Mago"
+class Mago extends Personagem {
+    constructor(nome, magia) {
+        super(nome);
+        this.magia = magia;
+    }
+
+    // Implementação dos métodos abstratos da classe Persoangem
+    atacar() {
+        console.log(`${this.nome} lança a magia ${this.magia}`);
+    }
+    defender() {
+        console.log(`${this.nome} defende com o escudo`);
+    }
+}
