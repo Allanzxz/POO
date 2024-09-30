@@ -42,7 +42,7 @@ class Mago extends Personagem {
     // Construtor da classe Guerreiro
     public Mago(String nome, String magia) {
         super(nome);
-        this.arma = magia;
+        this.magia = magia;
     }
 
     // Subrescrita do método atacr da classe Abstrata Personagem
@@ -55,5 +55,18 @@ class Mago extends Personagem {
     @Override
     public void defender() {
         System.out.println(nome + " usa um escudo para se defender! " );
+    }
+}
+
+//Classe principal
+public class Main {
+    public static void main(String[] args) {
+        Guerreiro guerreiro = new Guerreiro("Thorin", "Espada");
+        guerreiro.atacar();
+        guerreiro.defender();
+
+        Mago mago = new Mago("Gandalf", "Bola de Fogo");
+        mago.atacar();
+        mago.defender();
     }
 }
