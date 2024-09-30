@@ -40,7 +40,7 @@ class Mago extends Personagem {
     private String magia;
 
     // Construtor da classe Guerreiro
-    public Guerreiro(String nome, String magia) {
+    public Mago(String nome, String magia) {
         super(nome);
         this.arma = magia;
     }
